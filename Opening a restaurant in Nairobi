@@ -1,1 +1,38 @@
+1.1 Introduction
+Kenya is the world's 48th largest country by total area with a population of more than 47.6 million people as per Kenya population census 2019. Kenya is the 29th most populous country. As of 2019, Kenya had an estimated GDP of US$99.246 billion and per capita GDP of US$2,010 making it the 62nd largest economy in the world. 
+The economy of Kenya is a market-based economy with a liberalised external trade system. One of the key economic sectors is tourism and contributes about 63 percent of GDP. This sector exhibited steady growth becoming the country's principal source of foreign exchange;
+Nairobi, Kenya’s capital city, is the country’s economic core. The city has a population of just over 4  million as per the population census of 2019 spread across 696 square kilometres (269 square miles). Nairobi has grown to become the second largest city in the African Great Lakes area, despite being one of youngest cities in the region. Nairobi’s area size - in combination with the total number of residents - brings  the current population density which is now approximately 4,850 residents per square kilometer. (12,600 people living per square mile)  
+The food and beverage industry is a segment of the entire tourism industry. The restaurant business in Kenya has been growing rapidly over the last couple of years. Evidence of this is seen by the expansion of major food chains in Kenya. Nairobi is referred to as the region’s foodie hub. One may argue that this is due to a rise in disposable incomes, fast economic growth and a young population. The young population largely characterized by millennials means it’s just not enough to start and run a restaurant “serving meals on a basic white plate”. The market demands creativity from open kitchens, more wood-less industry, craft beers,  fusion foods just to mention a few. 
+In Nairobi, a report highlights, the total spend in restaurants- and eating out more broadly – is anticipated to rise by 77 percent from US$848 million (Sh87.4 billion) in 2017 to US$1.5 billion (Sh154.7 billion) over the next decade. Additionally, restaurant location is a very important factor in customer perception. Restaurants in affluent neighborhoods are generally perceived to offer superior service and customer experience
 
+
+.
+1.2 Statement of the problem
+The demography of Nairobi is interesting to the average entrepreneur or restaurateur. However, this industry has some barriers to entry that include but not limited to;
+Economies of scale: this represents the ability of a startup restaurant to be able to successfully negotiate best prices with vendor  that will translate to reasonable pricing for the customers
+Capital: Economists describe this as a basic factor of production. In the restaurant business, no enough can be said about the importance of capital  to purchase assets and finance the operational costs
+Location: In this business it's all about location-location-location! This is a key factor in its potential for success. Prime location gives any establishment a competitive advantage. A restaurateur would have to consider a location that has constant and predictable foot-traffic in conjunction with the physical amenities that supports the foot-traffic. Zonal restrictions a driver of rental space pricing also greatly influences the location of a restaurant.
+Regulatory requirements: In order to safe-guard the general public - restaurant employees - included, the regulatory framework needs to be robust enough to guarantee public health and safety. Additionally, if an establishment would serve alcohol, additional licensing would be required.
+An entrepreneur or restaurateur hoping to open a restaurant in Nairobi has to consider market demand,  clarity of market segmentation they would like to service and the niche they would participate in or occupy. 
+
+
+1.3 Objectives
+For purposes of the Applied Data Science Capstone project, I will look at the possibility of opening a new restaurant in Nairobi. I will use a descriptive approach to narrate the data because I will be able to define and describe the variables being measured. The population will be derived from Foursquare API to get the most common venue in the different constituencies in Nairobi.
+There is limited published public-data on restaurants in Nairobi. Since location is an important determinant, I will attempt to link the commercial space pricing with regard to location. I will therefore collect data on average commercial space pricing in different parts of Nairobi and attempt to link this to the popularity of venues.
+
+
+1.4 Significance of the study 
+The beneficiaries of the study stretch the length and breadth of the entire participants in the industry These include;
+The government would benefit from this information in informing the regulatory framework from zonal classifications to public health and safety legislation
+Restaurateurs would benefit from this information as they would be able to identify popular venues and niches which these popular venues service 
+Scholars too would benefit from the conclusions drawn herein as i will attempt into the possibility of opening a restaurant in Nairobi
+
+
+1.5 Scope of study
+This study will be carried out in Nairobi and will target licensed restaurants
+
+
+1.6 Methodology
+I will GitHub repository in my study, which will have the following components:  constituency in Nairobi with corresponding latitude and longitude information
+I will use the python folium library to visualize geographic details of Nairobi and its constituencies and I will create a map of Nairobi with boroughs superimposed on top. I used latitude and longitude values to get the visual as below
+I will utilize the Foursquare API to explore the constituencies and perform some segmentation. I designed the limit as 50 venues and the radius 1000 meters for each constituency from their given latitude and longitude information. 
