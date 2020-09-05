@@ -8,23 +8,69 @@ In Nairobi, a report highlights, the total spend in restaurants- and eating out 
 
 1.2 Statement of the problem
 The demography of Nairobi is interesting to the average entrepreneur or restaurateur. Restaurant segment of the  hospitality industry is influenced greatly by the availability of leisure time and disposable income. In this business segment it is all about location-location-location! This is a key factor in its potential for success. Prime location gives any establishment a competitive advantage. A restaurateur would have to consider a location that has constant and predictable foot-traffic in conjunction with the physical amenities that supports the foot-traffic. An entrepreneur or restaurateur hoping to open a restaurant in the Nairobi area has to consider market demand,  clarity of market segmentation they would like to service and the niche they would participate in or occupy. 
-Whereas Nairobi is described as the region's foodie hub fuelled by key demographic characteristics previously described, Nairobi’s signature niche is not obvious. If a restaurateur wanted to open a new restaurant in the city based on category-popularity, which category of restaurant would they open? 
 
 1.3 Objectives
-For purposes of the Applied Data Science Capstone project, I will look at the possibility of opening a new restaurant in Nairobi city with the primary consideration being the niche of the restaurant. I will use a descriptive approach to narrate the data because I will be able to define and describe the observations. The population will be derived from Foursquare API to get the most common category in the city.
-There is limited published public-data on restaurants in Nairobi. Since location is an important determinant, I will attempt to link the commercial space pricing with regard to location. I will therefore collect data on average commercial space pricing in different parts of Nairobi and attempt to link this to the popularity of venues.
+For purposes of the Applied Data Science Capstone project, I will look at the possibility of opening a new restaurant in Nairobi city with the primary consideration being the niche of the restaurant.. 
+There is limited published public-data on restaurants in Nairobi. Whereas Nairobi is described as the region's foodie hub  the city's  signature niche in the restaurant space is not obvious to the regional or global palate. If a restaurateur wanted to open a  restaurant in the city based on category-popularity, which category of restaurant would they open?
 
 1.4 Significance of the study 
 The beneficiaries of the study stretch the length and breadth of the entire participants in the industry. These include;
 The government would benefit from this information in informing the regulatory framework from zonal classifications to public health and safety legislation.
 Restaurateurs would benefit from this information as they would be able to identify popular  niches which these popular venues service.
 Scholars too would benefit from the conclusions drawn herein as I will highlight categorization of restaurants and other scholars would attempt to find the nexus with any other emerging dependent variable.
-
 1.5 Scope of study
 This study will be carried out in Nairobi city and will target licensed restaurants.
 
 1.6 Methodology
-I will GitHub repository, which will have the following components:  Nairobi city with corresponding latitude and longitude information
-I will use the python folium library to visualize geographic details of the city, five thousand meters radius from the centre of the city. I used latitude and longitude values to get the visual as below
-I will utilize the Foursquare API to explore five thousand meters radius from the centre of the city and perform some segmentation. I designed the limit as one thousand venues and the radius five thousand meters given latitude and longitude information. 
+Methodology will research design, target population, sampling frame, sampling technique and sample size, data collection procedure, data collection instruments and data analysis involved in the whole process of this research.
 
+1.6.1 Research Design
+Research design is the conceptual structure within which the research is conducted. I will use a descriptive approach to narrate the data because I will be able to define and describe the observations
+
+
+1.6.2 Population
+The population will be derived from Foursquare API to get the most common category in the city.
+
+
+1.6.3 Sample frame
+A sample frame is a set of information used to identify a sample population. The sample frame will be all establishment categorized as restaurants 5000 metre radius from central location  -1.2832533; 36.8172449 using foursquare API
+
+1.7 Data analysis and presentation
+I will use  GitHub repository, which will have the following components:  Nairobi city with corresponding latitude and longitude information
+I will use the python folium library to visualize geographic details of the city, five thousand meters radius from the centre of the city. I used latitude and longitude values to get the visual as below
+
+1.7.1 Exploratory data analysis
+50 venues were returned by Foursquare.The following characteristics were useful in this analysis:: name, category, distance from central point, latitude and longitude.
+
+
+
+1.8 Discussion
+The histograms on the pair plot allows us to see the distribution of a variable whereas the scatter plots shows us the relationships or lack thereof between two variables.
+I observe that there is a high concentration of restaurants within two hundred and fifty metres radius of the centre. 
+It is seen that there is a concentration of restaurants between latitude -1.28 and -1.29 
+It is shown that there is a concentration of restaurants between longitudes 36.815 and 36.820
+
+
+Box plot was the most suitable visualization of distribution in restaurants. Below shows the average distance from the centre where restaurants are concentrated in addition to latitude and longitude. We also see the quartile ranges and outliers especially on the distance variable. 
+
+
+
+
+
+
+Below is a map of nairobi. The full- red marker represents the central point whereas the blue markers represent restaurants returned by foursquare
+
+
+
+
+
+
+
+
+
+
+
+50 venues were returned by Foursquare.  Based on this limited result of venues and patterns observed, agglomerative clustering will be used based on its ability to summarize data, ease of use and implementation to attempt to explain the observations with distance metric being euclidean and linkage parameter being ward
+
+1.9 Conclusion
+Restaurant segment of the  hospitality industry is influenced greatly by the availability of leisure time and disposable income. In this business segment it is all about location-location-location! An entrepreneur or restaurateur hoping to open a restaurant in the Nairobi area has to consider market demand and  clarity of market segmentation they would like to service and the niche they would participate in or occupy. It is quite interesting to see the concentration of restaurants in relation to distance from the centre. Restaurateurs can look further into the identified clusters and analyse  the factors favouring restaurants in the clusters identified whereas city planners and managers  to ensure adequate amenities and infrastructure that will support these businesses.
